@@ -1,0 +1,15 @@
+<div fxLayout="column">
+  <div fxFlexAlign="center">
+    <h1>New Book</h1>
+    <form (ngSubmit)="onSubmit()" #bookForm="ngForm">
+      <md-input-container fxFlexFill>
+        <input mdInput placeholder="Title" required [(ngModel)]="book.title" #title="ngModel" name="book">
+      </md-input-container>
+      <md-input-container fxFlexFill>
+        <textarea mdInput placeholder="Description" required [(ngModel)]="book.description" #description="ngModel" name="description"></textarea>
+      </md-input-container>
+      <button md-button (click)="cancel()">Cancel</button>
+      <button type="submit" md-button [disabled]="!bookForm.form.valid">Save</button>
+    </form>
+  </div>
+</div>

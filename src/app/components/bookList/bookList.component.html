@@ -1,0 +1,12 @@
+<md-nav-list>
+  <h2 md-header>List of books</h2>
+  <h3 md-subheader *ngIf="books?.length == 0">There are no books</h3>
+  <md-list-item *ngFor="let book of books">
+    <md-icon md-list-icon>book</md-icon>
+    <a md-line [routerLink]="['/book',book.id]">
+    ­{{book.title}}
+    </a>
+  </md-list-item>
+</md-nav-list>
+
+<button md-fab (click)="newBook()"><md-icon>add</md-icon></button>

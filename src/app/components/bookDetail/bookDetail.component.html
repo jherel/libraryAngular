@@ -1,0 +1,28 @@
+<div fxLayout="row" fxLayoutAlign="space-around center">
+  <div fxFlex="40" fxFlex.sm="100" fxFlex.md="70">
+    <div *ngIf="book; else loading">
+      <md-card class="example-card">
+        <md-card-header>
+          <div md-card-avatar>
+            <md-icon>book</md-icon>
+          </div>
+          <md-card-title>{{book.title}}</md-card-title>
+          <md-card-subtitle>ID: {{book.id}}</md-card-subtitle>
+        </md-card-header>
+        <md-card-content>
+          <p>
+            {{book.description}}
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <button md-button (click)="removeBook()">Remove</button>
+          <button md-button (click)="editBook(book.id)">Edit</button>
+        </md-card-actions>
+      </md-card>
+    </div>
+    <ng-template #loading>
+      <p *ngIf="book !== undefined">Loading...</p>
+    </ng-template>
+  </div>
+</div>
+<button md-fab (click)="gotoBooks()"><md-icon>reply</md-icon></button>
