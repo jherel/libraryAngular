@@ -1,8 +1,8 @@
 {
   "name": "library",
   "version": "1.0.0",
-  "description": "API Rest",
-  "main": "index.js",
+  "description": "Manage library with angular and nodejs",
+  "main": "app.js",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2"
