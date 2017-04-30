@@ -1,6 +1,6 @@
 # libraryAngular
 
-Project that manages books (CRUD) with Angular and nodejs.
+Project that manages books (CRUD) with Angular and nodejs. Used Angular Material to desing.
 
 ## About the contributors
 + Córdova Proaño, Jorge Jherel
@@ -44,8 +44,8 @@ Project that manages books (CRUD) with Angular and nodejs.
 #### Delete book
 ![delete][delete]
 
-[list]: /media/README/listBooks.png
-[new]: /media/README/newBook.png
-[view]: /media/README/viewBook.png
-[edit]: /media/README/editBook.png
-[delete]: /media/README/deleteBook.png
+[list]: /media/README/listBooks.PNG
+[new]: /media/README/newBook.PNG
+[view]: /media/README/viewBook.PNG
+[edit]: /media/README/editBook.PNG
+[delete]: /media/README/deleteBook.PNG
